@@ -1,0 +1,273 @@
+/*-------------------------------------------------------*/
+/* Footer
+/*-------------------------------------------------------*/
+
+.footer {
+  // @include linear-gradient-from-bottom(#000000, $dark-font);
+  background-color: #061843;
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__widgets {
+    padding: 80px 0;
+    font-family: $body-font;
+    @include bp-md-updown {
+      padding: 30px 0 0px;
+    }
+    @include bp-md-down {
+      padding: 30px 0;
+    }
+
+    p {
+      color: #fff;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: $body-font;
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    a.anchor-link {
+      color: #fff;
+      margin-bottom: 0.4rem;
+      font-size: 14px;
+      display: inline-block;letter-spacing: 1px;
+      -webkit-transition: all 4s cubic-bezier(.17,.67,.32,.87)!important;
+      -o-transition: all 4s cubic-bezier(.17,.67,.32,.87)!important;
+      transition: all 4s cubic-bezier(.17,.67,.32,.87)!important;
+      position: relative;
+      &:hover {
+        color: $nav-color;
+        &:before {
+          width: 100%;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        background: $nav-color;
+        height: 2px;
+        -webkit-transition: all cubic-bezier(.57,.84,.6,.87) .4s;
+        -o-transition: all cubic-bezier(.57,.84,.6,.87) .4s;
+        transition: all cubic-bezier(.57,.84,.6,.87) .4s;
+      }
+    }
+
+    ul li a:hover {
+      color: #fff;
+    }
+
+    @include bp-lg-down {
+      & > .row > div:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+/* Bottom Footer
+-------------------------------------------------------*/
+
+.footer__bottom {
+  padding: 32px 0;
+  background-color: #011530;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #9AA3AB;
+  font-family: $heading-font;
+
+  a {
+    color: #9AA3AB;
+
+    &:hover {
+      color: #fff;
+    }
+  }  
+}
+
+@include bp-md-down {
+  .main-container {
+    margin-bottom: 0px;
+  }
+  .footer {
+    position: relative;
+    &__widgets {
+      padding: 5 rem 0;
+    }
+  }
+}
+
+@include bp-sm-down {
+  .footer {
+    position: relative;
+    &__widgets {
+      padding: 5rem 0;
+    }
+  }
+}
+
+@include bp-md-updown {
+  .footer {
+    position: relative;
+    &__widgets {
+      padding: 5rem 0;
+    }
+  }
+}
+
+/* Site Upper Footer
+-------------------------------------------------------*/
+.site-footer {
+  background: #001328 url(../img/bg-2.jpg) center right no-repeat;
+  background-size: cover;
+  .upper-footer {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    @include bp-sm-down {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    @include bp-md-updown {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
+@include bp-sm-down {
+  .col-xs-12 {
+    margin: 1.5rem 0;
+  }
+}
+
+@include bp-md-updown {
+  .col-xs-12 {
+    margin: 1.5rem 0;
+  }
+}
+
+
+.footer-widget {
+  &.links-widget-one {
+    padding-left: 20px;
+    @include bp-sm-down {
+      padding-left: 0;
+    }
+    @include bp-md-updown {
+      padding-left: 0;
+    }
+  }
+  .title-box h3 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .btn-box {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .social {
+    display: inline-block;
+    vertical-align: top;
+    padding: 16.5px 0;
+    margin-left: 40px;
+    a {
+      color: #FFFFFF;
+      font-size: 22px;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+      &:hover {
+        color: #0f6fd5;
+      }
+      + a {
+        margin-left: 28px;
+      }
+    }
+  }
+  ul.link-lists {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      + li {
+        margin-top: 10px;
+      }
+      a {
+        color: #DBE9FA;
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        position: relative;
+        padding-right: 20px;
+        &:after {
+          content: '\f061';
+          font-family: 'FontAwesome';
+          font-size: 10px;
+          position: absolute;
+          color: $pink-color;
+          top: 50%;
+          right: 0;
+          -webkit-transform: translateY(-50%) translateX(10px);
+          transform: translateY(-50%) translateX(10px);
+          opacity: 0;
+          -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+        }
+      }
+      &:hover a:after {
+        -webkit-transform: translateY(-50%) translateX(0);
+        transform: translateY(-50%) translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+  .btn-box {
+    .thm-btn {
+      padding: 2px 3rem;
+    }
+    .btn-tag-line {
+      display: block;
+      color: #DBEAFB;
+      font-size: 20px;
+      font-family: $Covered;
+      letter-spacing: 0;
+      margin-top: 20px;
+      i {
+        display: inline-block;
+        -webkit-transform: rotate(-85deg) scale(1, -1) translate(3px, 0px);
+        transform: rotate(-85deg) scale(1, -1) translate(3px, 0px);
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+.site-footer .bottom-footer p {
+  margin: 0;
+  text-align: center;
+  color: #DBEAFB;
+  font-size: 16px;
+  font-weight: 600;
+  border-top: 2px solid rgba(255, 255, 255, 0.05);
+  padding: 34.5px 0;
+  a {
+    text-decoration: underline;
+    color: #DBEAFB;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    &:hover {
+      color: #ee3234;
+    }
+  }
+}

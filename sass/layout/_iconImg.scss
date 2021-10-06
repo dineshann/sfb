@@ -1,0 +1,128 @@
+.sfb-sec {
+	padding: 0 0 6rem;
+	margin: 0;
+	position: relative;
+    overflow: hidden;
+	box-shadow: 0px 18px 60px -34px rgba(0, 0, 0, 0.2);
+	background-color: $main-color;
+	background-image: url(../img/bg.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	&__heading {
+		p{
+			color: $bg-light;
+			padding: 3rem 0 2rem;
+			text-align: center;
+		}
+		.sfb-heading {
+			text-align: right;
+		}
+	}
+	&__lfttext {
+		display: block;
+		position: relative;
+		padding-top: 1.8rem;
+		p{
+			color: #709BE7;
+			margin-bottom: 1rem;
+			
+		}
+		h4 {
+			color: white;
+			font-size: 2.5rem;
+			font-weight: 600;	
+			display: block;
+			text-transform: capitalize;
+			&:before {
+				content: '';
+				width: 25%;
+				height: 8px;
+				background: $pink-color;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 16px;
+				display: block;
+				margin-bottom: 16px;
+			}
+		}
+		h5 {
+			font-size: 1.6rem;
+			font-weight: 400;
+			color: #bdbdbd;
+			line-height: 1.6;
+		}
+	}
+	&__content {
+		width: 100%;
+		min-height: 20vh;
+		background: #061742;
+		transition: background .6s ease;
+		border-radius: 30px 80px 20px 80px;
+		padding: 2.5rem 2rem 2rem;
+		box-shadow: 0 30px 40px -26px rgb(5, 19, 56, 0.8);
+		&:hover {
+			background-color: #031a35;
+			.circle {
+				border-radius: 100px;
+				position: absolute;
+				margin: auto;
+				transform: scale(1);
+				transform-origin: center center;
+				left: 0;
+				z-index: -1;
+				border-radius: 80px 200px 18px 322px;
+			}
+			.circle-1 {
+				width: 100%;
+				height: 100%;
+				background-color: #052244;
+				top: 0;
+				animation: pulse-new-1 2.6s linear 0s infinite;
+				border-radius: 80px 200px 180px 322px;
+			}
+			.circle-2 {
+				width: 100%;
+				height: 100%;
+				background-color: #042346;
+				top: 0;
+				animation: pulse-new-2 2.2s linear 0s infinite;
+				border-radius: 80px 200px 180px 322px;
+			}
+		}
+		h3 {
+			color: #bdbdbd;
+			margin-left: 1rem;
+		}
+		p {
+			color: #bdbdbd;
+			margin-left: 1rem;
+		}
+    }
+    
+    .sfb-p {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        &__img {
+            background-color: $pink-color;
+            border-radius: 80px 200px 200px 362px;
+            display: flex;
+            height: 180px;
+            margin-bottom: 24px;
+            text-align: center;
+            width: 250px;
+            -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            img {
+                display: flex;
+                width: 40%;
+                margin-left: 35%;
+            }
+            &:hover{
+                background-color: #1A47B0;
+                box-shadow: 8px -8px 0px 0px #709BE7;
+            }
+        }
+    }
+}
+

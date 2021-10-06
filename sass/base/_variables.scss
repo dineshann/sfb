@@ -1,0 +1,100 @@
+// Colors
+// $main-color: #DF6860;
+// $heading-color: #DF6860;
+// $alt-color: #f87219;
+$text-color: #444C5E;
+$dark-font: #212326;
+$meta-color: #919BA3;
+$nav-color: #ffffff;
+$text-white: #ffffff;
+$bg-light: #f7f7f7;
+$bg-dark: #596367;
+$border-color: #e1e5e6;
+
+
+$main-color: #082159;
+$heading-color: #1947B0;
+$mid-main-color: #123075;
+$alt-color: #0231cc;
+$ylw-color: #123075;
+$pink-color: #fa2b56;
+$dark-pink: #b1364e;
+
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i|PT+Sans:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap);
+$Roboto: 'Roboto', sans-serif;
+$Nunito: 'Nunito', sans-serif;
+$Covered: 'Covered By Your Grace', cursive;
+
+$body-font: $Nunito;
+$heading-font: $Nunito;
+
+
+
+// $body-font: 'Roboto', sans-serif;
+// $heading-font: 'Maven Pro', sans-serif; 
+
+
+// Navbar
+$nav-height: 90px;
+$nav-short-height: 90px;
+
+$radius: 100%;
+
+// Height
+$height40: 40px;
+$minh100vh: 100vh;
+
+$main-bg: linear-gradient(-50deg,$ylw-color 0,$mid-main-color 40%,$main-color 100%);
+$brand-primary: linear-gradient(100deg, $main-color, $main-color);
+$brand-secondary: linear-gradient(100deg, $main-color, $alt-color);
+$brand-two: linear-gradient(100deg, #e1e5e6, #f7f7f7);
+$bezier: cubic-bezier(.19,1,.22,1);
+
+// Border radius
+$border32: 32px;
+$border16: 16px;
+$border8: 8px;
+$border4: 4px;
+$border6: 6px;
+$border2: 2px;
+
+// Shadow
+$shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+
+// Layouts
+$smlg-device: 'only screen and (max-width: 1199px)';
+
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout:'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (max-width: 575px)';
+/* container 450px*/
+$small-mobile: 'only screen and (max-width: 479px)';
+/* container 300px*/
+
+@media #{$large-mobile} {
+    .container {
+        max-width: 450px;
+    }
+}
+
+@media #{$small-mobile} {
+    .container {
+        max-width: 320px;
+    }
+}
+@media (max-width: 1920px) and (min-width: 1400px){
+    .container {
+        max-width: 1200px;
+    }
+}
